@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz!</title>
+    <link
+      rel="icon"
+      href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.eIJrEKY4cvv7W7aA_jgwbwHaHa%26pid%3DApi&f=1"
+    />
+    <link rel="stylesheet" href="../css/quiz.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h2 id="quest">2 + 3</h2>
+      <input
+        type="text"
+        name="ansBox"
+        id="ansBox"
+        placeholder="Your Answer"
+        onkeydown="checkKey(event)"
+      />
+      <p
+        id="scoreText"
+        title="click to reset and change question"
+        onclick="reset()"
+        onmouseover="setColor(this, '#ED6A5A')"
+        onmouseleave="setColor(this, 'white')"
+      >
+        Score: <span id="score">0</span>
+      </p>
+    </div>
+    <div id="midMade">
+      <p id="madeText">
+        Made by
+        <a
+          id="nameLink"
+          title="Random creation of mine"
+          href="https://codecal.netlify.app/"
+          target="_blank"
+          >flyingdelta</a
+        >
+      </p>
+    </div>
+    <div id="footer">
+      <a class="links" target="_blank" href="https://twitter.com/flyingdelta01">
+        <img
+          class="svg"
+          src="https://www.svgrepo.com/show/157815/twitter.svg"
+          alt="twitter"
+        />
+      </a>
+      <a
+        class="links"
+        target="_blank"
+        href="http://randomthoughts-1.tumblr.com/"
+      >
+        <img
+          class="svg"
+          src="https://www.svgrepo.com/show/165259/tumblr.svg"
+          alt="twitter"
+        />
+      </a>
+    </div>
+    <script src="../javaScript/quiz.js"></script>
+  </body>
+</html>

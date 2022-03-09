@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.eIJrEKY4cvv7W7aA_jgwbwHaHa%26pid%3DApi&f=1"
+    />
+    <link rel="stylesheet" href="../css/calc.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="box">
+          <label for="inp" id="lab">null</label>
+        <input type="text" name="input_nums" id="inp" />
+        <table id="but_tab">
+          <tr>
+            <td><button class="but_nums" onclick="append(7)">7</button></td>
+            <td><button onclick="append(8)" class="but_nums">8</button></td>
+            <td><button onclick="append(9)" class="but_nums">9</button></td>
+            <td>
+                <button onclick="op('a')" class="but_nums">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="append(4)" class="but_nums">4</button></td>
+            <td><button onclick="append(5)" class="but_nums">5</button></td>
+            <td><button onclick="append(6)" class="but_nums">6</button></td>
+            <td>
+                <button onclick="op('s')" class="but_nums">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="append(1)" class="but_nums">1</button></td>
+            <td><button onclick="append(2)" class="but_nums">2</button></td>
+            <td><button onclick="append(3)" class="but_nums">3</button></td>
+            <td>
+                <button onclick="op('m')" class="but_nums">*</button>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="append(0)" class="but_nums">0</button></td>
+            <td><button onclick="append('.')" class="but_nums">.</button></td>
+            <td><button onclick="back()" class="but_nums">&#8592</button></td>
+            <td>
+                <button onclick="op('d')" class="but_nums">/</button>
+            </td>
+          </tr>
+          <tr>
+              <td colspan="2">
+                  <button onclick="eq()" class="but_nums col2">=</button>
+            </td>
+            <td><button onclick="cl('a')" class="but_nums">C</button></td>
+            <td><button onclick="cl('ac')" class="but_nums">AC</button></td>
+          </tr>
+          <tr id="adv">
+            <td colspan="2"><button onclick="history()" class="but_nums col2" id="but_hist">history</button></td>
+            <td><button onclick="op('p')" class="but_nums">^</button></td>
+            <td><button onclick="binary()" class="but_nums" id="but_bin">bin</button></td>
+          </tr>
+        </table>
+      </div>
+      <button id="made" onclick="disp_adv()">Made by <span id="made_text">flyingdelta</span></button>
+    </div>
+    <script src="../javaScript/calc.js"></script>
+  </body>
+</html>

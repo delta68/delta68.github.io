@@ -1,0 +1,76 @@
+body {
+  font-family: monospace;
+  background-color: #32292f;
+}
+#main {
+  text-align: center;
+  margin: auto;
+}
+#inp {
+  width: 180px;
+  caret-color: #32292f;
+  margin-bottom: 8px;
+  height: 20px;
+}
+#inp:focus {
+  color: aliceblue;
+  outline: none;
+  background-color: #70abaf;
+  border: none;
+  height: 24px;
+  border-radius: 2px;
+}
+#box {
+  position: relative;
+  top: calc(50vh - 150px);
+  margin: auto;
+  width: 250px;
+}
+#but_tab {
+  margin: auto;
+}
+.but_nums {
+  background-color: transparent;
+  margin: 5px;
+  width: 40px;
+  height: 30px;
+  border: 2px solid #70abaf;
+  color: #70abaf;
+  border-radius: 5px;
+  transition: color 0.05s;
+  transition: background-color 0.05s ease-out;
+}
+.but_nums:hover {
+  border: none;
+  border-radius: 5px;
+  background-color: #70abaf !important;
+  color: #32292f !important;
+}
+#lab {
+  color: aliceblue;
+  margin-right: 5px;
+}
+.col2 {
+  width: 92px;
+}
+#made {
+  background-color: #32292f;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: small;
+  opacity: 0.6;
+  color: aliceblue;
+  position: relative;
+  top: calc(50vh - 90px);
+}
+#made_text {
+  font-family: monospace;
+}
+#made_text:hover {
+  cursor: pointer;
+}
+#adv {
+  display: none;
+  position: absolute;
+}
