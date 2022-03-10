@@ -1,6 +1,6 @@
 body {
-  background-color: #b9375e;
-  color: #fff3e6;
+  background-color: black;
+  color: white;
 }
 #main {
   text-align: center;
@@ -40,13 +40,11 @@ td {
   width: 160px;
 }
 #mainTable {
-  background-color: #ffc2d4;
   display: block;
   width: fit-content;
   margin: 0 auto;
   white-space: nowrap;
   border: 1px solid white;
-  border-radius: 8px;
   overflow-y: auto;
   height: 300px;
   border-collapse: collapse;
@@ -65,7 +63,7 @@ td {
   -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
 }
 th {
-  background-color: #ff4d6d;
+  background-color: darkcyan;
 }
 #inpDiv {
   text-align: left;
@@ -79,12 +77,12 @@ th {
 .inp {
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: #ffc2d4;
+  background-color: darkslategrey;
   border: none;
-  color: black;
+  color: white;
 }
 .inp::placeholder {
-  color: black;
+  color: aliceblue;
   opacity: 0.5;
 }
 .inpLabels {
